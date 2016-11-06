@@ -22,7 +22,7 @@ local function returnids(cb_extra, success, result)
   ..'There are '..result.members_num..' members'
   ..'\n---------\n'
   for k,v in pairs(result.members) do
-    text = text .. v.print_name .. " (user#id" .. v.id .. ")\n"
+    text = text .. v.print_name .. " (userid=>" .. v.id .. ")\n"
   end
   send_large_msg(receiver, text)
 end
