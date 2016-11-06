@@ -1,4 +1,4 @@
-local function user_print_name(user)
+local function user_print_name=>user
   if user.print_name then
     return user.print_name
   end
